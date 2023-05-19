@@ -24,7 +24,7 @@ Parameters:
     Default: 10.0.1.0/24 
     
 Resources:
-  # create VPC
+  
   myVPC:
     Type: AWS::EC2::VPC
     Properties: 
@@ -38,7 +38,7 @@ Resources:
        - Key: Application
          Value: !Ref 'AWS::StackName'
   
-  # create Internet Gateway
+ 
   myIGW:
     Type: AWS::EC2::InternetGateway
     Properties:
